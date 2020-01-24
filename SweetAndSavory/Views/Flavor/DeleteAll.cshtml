@@ -1,0 +1,17 @@
+@{
+  Layout = "_Layout";
+}
+
+@model List<SweetAndSavory.Models.Flavor>;
+
+<h2>Are you sure you want to delete all flavors?</h2>
+<br>
+
+@using (Html.BeginForm())
+{
+    <input type="submit" value="DeleteAll" />
+}
+
+<br>
+<br>
+@Html.ActionLink("Back to flavors", "Index")
