@@ -1,6 +1,6 @@
 using System;
 
-namespace C_PierresSweetandSavory.Models
+namespace SweetAndSavory.Models
 {
     public class ErrorViewModel
     {
