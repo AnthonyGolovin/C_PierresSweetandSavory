@@ -8,8 +8,7 @@ namespace SweetAndSavory.Models
     public virtual DbSet<Flavor> Flavors { get; set; }
     public DbSet<Treat> Treats { get; set; }
     public DbSet<FlavorTreat> FlavorTreat { get; set; }
-    public DbSet<Reservation> Reservations { get; set; }
 
-    public LibraryContext(DbContextOptions options) : base(options) { }
+    public SweetAndSavoryContext(DbContextOptions options) : base(options) { }
   }
 }

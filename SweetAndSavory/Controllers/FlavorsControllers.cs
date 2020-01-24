@@ -30,7 +30,8 @@ namespace SweetAndSavory.Controllers
     }
 
     [HttpPost]
-    public ActionResult Create(Flavor flavor)f    {
+    public ActionResult Create(Flavor flavor)
+    {
       _db.Flavors.Add(flavor);
       _db.SaveChanges();
       return RedirectToAction("Index");

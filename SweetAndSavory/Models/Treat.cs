@@ -14,7 +14,6 @@ namespace SweetAndSavory.Models
         public int FlavorId { get; set; } 
         public virtual Flavor Flavor { get; set; }
         public virtual ApplicationUser User { get; set; } 
-        // public bool isChecked = false;
 
         public ICollection<FlavorTreat> Flavors { get;}
     }

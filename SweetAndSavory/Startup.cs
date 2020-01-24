@@ -26,11 +26,11 @@ namespace SweetAndSavory
       services.AddMvc();
 
       services.AddEntityFrameworkMySql()
-        .AddDbContext<LibraryContext>(options => options
+        .AddDbContext<SweetAndSavoryContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"]));
 
       services.AddIdentity<ApplicationUser, IdentityRole>()
-        .AddEntityFrameworkStores<LibraryContext>()
+        .AddEntityFrameworkStores<SweetAndSavoryContext>()
         .AddDefaultTokenProviders();
 
       services.Configure<IdentityOptions>(options =>
